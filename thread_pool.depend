@@ -1,0 +1,68 @@
+# depslib dependency file v1.0
+1488093076 source:f:\virtual_disk\my_project\my_src\thread_pool.c
+	<stdlib.h>
+	<stdio.h>
+	<assert.h>
+	<pthread.h>
+	"thread_pool.h"
+
+1488092860 f:\virtual_disk\my_project\my_src\thread_pool.h
+	<stdio.h>
+	<stdlib.h>
+	<pthread.h>
+
+1491582898 source:f:\virtual_disk\my_project\my_src\my_thread_pool.cpp
+	<pthread.h>
+	<semaphore.h>
+	<stdio.h>
+	<list>
+	<assert.h>
+	<stdlib.h>
+	<windows.h>
+	<iostream>
+	<iostream>
+	<assert.h>
+	<windows.h>
+	"my_thread_pool.h"
+	<pthread.h>
+	"errors.h"
+
+1491130453 f:\virtual_disk\my_project\my_src\my_thread_pool.h
+	<iostream>
+	<list>
+
+859998340 f:\virtual_disk\my_project\my_src\errors.h
+	<unistd.h>
+	<errno.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1492619827 source:f:\virtual_disk\my_project\my_src\cpp_inherent.cpp
+	<iostream>
+	<iostream>
+	<iostream>
+
+1492355598 source:f:\virtual_disk\my_project\my_src\cpp_intellgent_pointer.cpp
+	<iostream>
+	<memory>
+
+1492360242 source:f:\virtual_disk\my_project\my_src\cpp_template.cpp
+	<iostream>
+
+1492447028 source:f:\virtual_disk\my_project\my_src\cpp_friend.cpp
+	<iostream>
+
+1492532518 source:f:\virtual_disk\my_project\my_src\cpp_some_keywords.cpp
+	<iostream>
+	"some_keywords.h"
+	"some_keywords_another.h"
+
+1492532349 f:\virtual_disk\my_project\my_src\some_keywords.h
+	<iostream>
+
+1492531352 f:\virtual_disk\my_project\my_src\some_keywords_another.h
+
+1492532627 source:f:\virtual_disk\my_project\my_src\cpp_some_keywords_another.cpp
+	"some_keywords.h"
+
