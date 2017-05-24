@@ -1,4 +1,4 @@
-#define THREAD_POOL_CPP 
+#define THREAD_POOL_CPP
 #ifdef THREAD_POOL_CPP
 //C++线程池，暂时不支持异步task
 //todo:实现cpu分核，支持异步task，实现优先级调度
@@ -224,6 +224,7 @@ void* thread_pool::deamon_func(void* arg)
         while(pool->task_num.spin_get_count() != 0 )
         {
             pthread_cond_wait(&pool->wake_deamon, &pool->mutex_wake_deamon);
+            cout<<"task num is "<<pool->task_num.spin_get_count()<<endl;
         }
 
         break;
@@ -255,7 +256,6 @@ void* thread_pool::thread_func(void* arg)
         {
             task->func(task->arg);
         }
-
         pthread_cond_signal(&pool->wake_deamon);//唤醒deamon
     }
 
@@ -298,7 +298,7 @@ int32_t main(int32_t argc, char**argv)
 {
     thread_pool *pool = new thread_pool(10);
     //delete pool;
-    for(uint32_t i = 0; i<50; i++)
+    for(uint32_t i = 0; i<500000; i++)
     {
         pool->add_task(task_func, NULL);
     }
